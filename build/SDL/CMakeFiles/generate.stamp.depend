@@ -1,0 +1,52 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.1/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLanguage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLinkerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckLinkerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/CMakeLists.txt
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/3rdparty.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/FindLibUSB.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/GetGitRevisionDescription.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/PreseedDOSCache.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/PreseedEmscriptenCache.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/PreseedHaikuCache.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/PreseedMSVCCache.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/PreseedNokiaNGageCache.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/SDL3Config.cmake.in
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/macros.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/sdlchecks.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/sdlcommands.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/sdlcompilers.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/sdlcpu.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/sdlmanpages.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/cmake/sdlplatform.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/include/build_config/SDL_build_config.h.cmake
+D:/files/andriod/org.libsdl.hello/app/jni/SDL/include/build_config/SDL_revision.h.cmake
+D:/files/andriod/org.libsdl.hello/build/CMakeFiles/cmake.verify_globs
+D:/files/andriod/org.libsdl.hello/build/SDL/CMakeFiles/SDL_build_config.h.intermediate

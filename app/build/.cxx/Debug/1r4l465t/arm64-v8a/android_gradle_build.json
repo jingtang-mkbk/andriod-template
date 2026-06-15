@@ -1,0 +1,86 @@
+{
+  "buildFiles": [
+    "D:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Android.mk",
+    "D:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Application.mk"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\ndk-build.cmd",
+      "NDK_PROJECT_PATH\u003dnull",
+      "APP_BUILD_SCRIPT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Android.mk",
+      "NDK_APPLICATION_MK\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Application.mk",
+      "APP_ABI\u003darm64-v8a",
+      "NDK_ALL_ABIS\u003darm64-v8a",
+      "NDK_DEBUG\u003d1",
+      "NDK_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj",
+      "NDK_LIBS_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/lib",
+      "APP_PLATFORM\u003dandroid-21",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\ndk-build.cmd",
+    "NDK_PROJECT_PATH\u003dnull",
+    "APP_BUILD_SCRIPT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Android.mk",
+    "NDK_APPLICATION_MK\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Application.mk",
+    "APP_ABI\u003darm64-v8a",
+    "NDK_ALL_ABIS\u003darm64-v8a",
+    "NDK_DEBUG\u003d1",
+    "NDK_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj",
+    "NDK_LIBS_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/lib",
+    "APP_PLATFORM\u003dandroid-21",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "main-debug-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj",
+        "NDK_LIBS_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/lib",
+        "APP_PLATFORM\u003dandroid-21",
+        "D:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj/local/arm64-v8a/libmain.so"
+      ],
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "main",
+      "output": "D:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t\\obj\\local\\arm64-v8a\\libmain.so"
+    },
+    "SDL3-debug-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj",
+        "NDK_LIBS_OUT\u003dD:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/lib",
+        "APP_PLATFORM\u003dandroid-21",
+        "D:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj/local/arm64-v8a/libSDL3.so"
+      ],
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "SDL3",
+      "output": "D:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t\\obj\\local\\arm64-v8a\\libSDL3.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-arm64-v8a": {
+      "cCompilerExecutable": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

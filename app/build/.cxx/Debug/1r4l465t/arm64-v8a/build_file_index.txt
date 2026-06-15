@@ -1,0 +1,2 @@
+D:\files\andriod\org.libsdl.hello\app\jni\Android.mk
+D:\files\andriod\org.libsdl.hello\app\jni\Application.mk

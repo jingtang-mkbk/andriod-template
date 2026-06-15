@@ -1,0 +1,15 @@
+@echo off
+"C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\ndk-build.cmd" ^
+  "NDK_PROJECT_PATH=null" ^
+  "APP_BUILD_SCRIPT=D:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Android.mk" ^
+  "NDK_APPLICATION_MK=D:\\files\\andriod\\org.libsdl.hello\\app\\jni\\Application.mk" ^
+  "APP_ABI=arm64-v8a" ^
+  "NDK_ALL_ABIS=arm64-v8a" ^
+  "NDK_DEBUG=1" ^
+  "NDK_OUT=D:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/obj" ^
+  "NDK_LIBS_OUT=D:\\files\\andriod\\org.libsdl.hello\\app\\build\\intermediates\\cxx\\Debug\\1r4l465t/lib" ^
+  "APP_PLATFORM=android-21" ^
+  "APP_SHORT_COMMANDS=false" ^
+  "LOCAL_SHORT_COMMANDS=false" ^
+  -B ^
+  -n
