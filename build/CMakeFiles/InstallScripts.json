@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"D:/files/andriod/org.libsdl.hello/build/cmake_install.cmake",
-		"D:/files/andriod/org.libsdl.hello/build/SDL/cmake_install.cmake",
-		"D:/files/andriod/org.libsdl.hello/build/src/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

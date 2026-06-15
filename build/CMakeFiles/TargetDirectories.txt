@@ -1,8 +1,0 @@
-D:/files/andriod/org.libsdl.hello/build/CMakeFiles/ALL_BUILD.dir
-D:/files/andriod/org.libsdl.hello/build/CMakeFiles/ZERO_CHECK.dir
-D:/files/andriod/org.libsdl.hello/build/SDL/CMakeFiles/SDL3-shared.dir
-D:/files/andriod/org.libsdl.hello/build/SDL/CMakeFiles/SDL3_test.dir
-D:/files/andriod/org.libsdl.hello/build/SDL/CMakeFiles/SDL_uclibc.dir
-D:/files/andriod/org.libsdl.hello/build/SDL/CMakeFiles/ALL_BUILD.dir
-D:/files/andriod/org.libsdl.hello/build/src/CMakeFiles/main.dir
-D:/files/andriod/org.libsdl.hello/build/src/CMakeFiles/ALL_BUILD.dir
