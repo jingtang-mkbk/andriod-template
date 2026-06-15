@@ -1,1 +1,0 @@
-D:\files\andriod\org.libsdl.hello\app\build\intermediates\cxx\Debug\1r4l465t\obj\local\arm64-v8a

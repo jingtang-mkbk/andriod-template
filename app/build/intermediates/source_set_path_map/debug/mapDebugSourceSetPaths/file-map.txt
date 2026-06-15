@@ -1,7 +1,0 @@
-org.libsdl.hello.app-pngs-0 D:\files\andriod\org.libsdl.hello\app\build\generated\res\pngs\debug
-org.libsdl.hello.app-resValues-1 D:\files\andriod\org.libsdl.hello\app\build\generated\res\resValues\debug
-org.libsdl.hello.app-packageDebugResources-2 D:\files\andriod\org.libsdl.hello\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-org.libsdl.hello.app-packageDebugResources-3 D:\files\andriod\org.libsdl.hello\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-org.libsdl.hello.app-debug-4 D:\files\andriod\org.libsdl.hello\app\build\intermediates\merged_res\debug\mergeDebugResources
-org.libsdl.hello.app-debug-5 D:\files\andriod\org.libsdl.hello\app\src\debug\res
-org.libsdl.hello.app-main-6 D:\files\andriod\org.libsdl.hello\app\src\main\res
