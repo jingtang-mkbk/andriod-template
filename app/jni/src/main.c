@@ -1,13 +1,18 @@
 #define SDL_MAIN_USE_CALLBACKS 1 /* use the callbacks instead of main() */
+#define STB_DS_IMPLEMENTATION    /* generate stb_ds function bodies in this TU */
 #include <stdlib.h>
 #include <SDL3/SDL_main.h>
 #include "scenes/main_scene/index.h"
 #include "scenes/test_scene/index.h"
 
-/* Scene switcher: call this from any scene to request a switch next frame */
-void switch_scene(AppState *state, const Scene *new_scene)
+/* Scene switcher: call with scene name string to request a switch next frame */
+void switch_scene(AppState *state, const char *name)
 {
-    state->next_scene = new_scene;
+    const Scene *s = shget(state->scene_map, name);
+    if (s)
+        state->next_scene = s;
+    else
+        SDL_Log("switch_scene: unknown scene '%s'", name);
 }
 
 /* This function runs once at startup. */
@@ -42,10 +47,16 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
 
     state->display_scale = SDL_GetWindowDisplayScale(state->window);
 
+    /* Build scene hash map: string name → Scene* */
+    state->scene_map = NULL;
+    shput(state->scene_map, "main_scene", &main_scene);
+    shput(state->scene_map, "test_scene", &test_scene);
+
     /* Boot the first scene */
     state->current_scene = &main_scene;
     state->next_scene = &main_scene;
     state->current_scene->init(state);
+    state->switch_scene = switch_scene;
 
     *appstate = state;
 
@@ -85,6 +96,7 @@ void SDL_AppQuit(void *appstate, SDL_AppResult result)
     AppState *state = (AppState *)appstate;
     if (state)
     {
+        shfree(state->scene_map);
         SDL_free(state);
     }
 }

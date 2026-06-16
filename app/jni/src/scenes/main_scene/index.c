@@ -1,5 +1,4 @@
 #include "index.h"
-#include "scenes/test_scene/index.h"
 
 static void init(AppState *state)
 {
@@ -37,7 +36,7 @@ static void event(AppState *state, SDL_Event *event)
     if (mx >= d->text_x && mx <= d->text_x + tw &&
         my >= d->text_y && my <= d->text_y + th)
     {
-      switch_scene(state, &test_scene);
+      state->switch_scene(state, "test_scene");
     }
   }
 }
