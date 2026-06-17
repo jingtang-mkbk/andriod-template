@@ -1,4 +1,5 @@
 #include "index.h"
+#include "../../engine/music/index.h"
 
 static void init(AppState *state)
 {
@@ -6,17 +7,24 @@ static void init(AppState *state)
   state->scene_data = d;
 
   const char *text = "Switch";
-  d->text_scale = state->display_scale * 4.0f;
+  d->text_scale = SDL_GetWindowDisplayScale(state->window) * 4.0f;
   d->text_w = SDL_strlen(text) * SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE;
   d->text_h = SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE;
+
+  /* Load images into sprite map */
+  init_sprite(&d->sprites, state->renderer,
+              "tiger", "assets/imgs/gs_tiger.svg", 100, 100, 200.0f, 200.0f);
+
+  /* Start background music */
+  if (music_init("assets/music/the_entertainer.ogg"))
+    music_play();
 }
 
 static void event(AppState *state, SDL_Event *event)
 {
-  MainSceneData *d = main_scene_data(state);
+  MainSceneData *d = SCENE_DATA(state, MainSceneData);
 
-  if (event->type == SDL_EVENT_KEY_DOWN ||
-      event->type == SDL_EVENT_QUIT)
+  if (event->type == SDL_EVENT_QUIT)
   {
     state->app_quit = SDL_APP_SUCCESS;
     return;
@@ -43,7 +51,7 @@ static void event(AppState *state, SDL_Event *event)
 
 static void iterate(AppState *state)
 {
-  MainSceneData *d = main_scene_data(state);
+  MainSceneData *d = SCENE_DATA(state, MainSceneData);
   int pixel_w, pixel_h;
   SDL_GetCurrentRenderOutputSize(state->renderer, &pixel_w, &pixel_h);
 
@@ -54,6 +62,8 @@ static void iterate(AppState *state)
 
   SDL_SetRenderDrawColor(state->renderer, 50, 50, 50, 255);
   SDL_RenderClear(state->renderer);
+
+  render_sprite(state->renderer, &d->sprites, "tiger");
 
   SDL_SetRenderScale(state->renderer, d->text_scale, d->text_scale);
   SDL_SetRenderDrawColor(state->renderer, 255, 255, 255, 255);
@@ -68,6 +78,9 @@ static void iterate(AppState *state)
 
 static void deinit(AppState *state)
 {
+  MainSceneData *d = SCENE_DATA(state, MainSceneData);
+  music_deinit();
+  deinit_sprites(&d->sprites);
   SDL_free(state->scene_data);
   state->scene_data = NULL;
 }

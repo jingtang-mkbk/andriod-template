@@ -45,8 +45,6 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
         return SDL_APP_FAILURE;
     }
 
-    state->display_scale = SDL_GetWindowDisplayScale(state->window);
-
     /* Build scene hash map: string name → Scene* */
     state->scene_map = NULL;
     shput(state->scene_map, "main_scene", &main_scene);
@@ -60,7 +58,6 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
 
     *appstate = state;
 
-    SDL_Log("Window created with display scale: %f", state->display_scale);
     SDL_SetRenderVSync(state->renderer, -1);
     return SDL_APP_CONTINUE;
 }

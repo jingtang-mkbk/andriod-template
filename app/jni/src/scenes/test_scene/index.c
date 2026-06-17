@@ -6,14 +6,14 @@ static void init(AppState *state)
   state->scene_data = d;
 
   const char *text = "Back";
-  d->text_scale = state->display_scale * 4.0f;
+  d->text_scale = SDL_GetWindowDisplayScale(state->window) * 4.0f;
   d->text_w = SDL_strlen(text) * SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE;
   d->text_h = SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE;
 }
 
 static void event(AppState *state, SDL_Event *event)
 {
-  TestSceneData *d = test_scene_data(state);
+  TestSceneData *d = SCENE_DATA(state, TestSceneData);
 
   if (event->type == SDL_EVENT_KEY_DOWN ||
       event->type == SDL_EVENT_QUIT)
@@ -46,7 +46,7 @@ static void event(AppState *state, SDL_Event *event)
 
 static void iterate(AppState *state)
 {
-  TestSceneData *d = test_scene_data(state);
+  TestSceneData *d = SCENE_DATA(state, TestSceneData);
 
   SDL_SetRenderDrawColor(state->renderer, 0, 80, 0, 255);
   SDL_RenderClear(state->renderer);

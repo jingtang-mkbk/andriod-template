@@ -3,8 +3,27 @@
 #include <SDL3/SDL.h>
 #include "stb_ds.h"
 
-/* Forward declaration */
+/* Convenience: cast state->scene_data to the scene's local type */
+#define SCENE_DATA(state, Type) ((Type *)(state)->scene_data)
+
+/* Forward declarations */
 typedef struct AppState AppState;
+typedef struct Image Image;
+
+/* A sprite on screen: image + position + display size */
+typedef struct Sprite
+{
+  Image *img;
+  float x, y;
+  float w, h;
+} Sprite;
+
+/* Hash map entry: string name → Sprite */
+typedef struct SpriteEntry
+{
+  char *key;
+  Sprite value;
+} SpriteEntry;
 
 /* Scene interface — like a virtual table, one per scene */
 typedef struct Scene
@@ -28,14 +47,13 @@ typedef struct AppState
   SDL_Window *window;
   SDL_Renderer *renderer;
   int app_quit;
-  float display_scale;
 
   /* Scene routing */
   SceneEntry *scene_map; /* string → Scene* hash table */
   const Scene *current_scene;
   const Scene *next_scene;
   void *scene_data;
-  void (*switch_scene)(AppState *, const char *name);
+  void (*switch_scene)(AppState *, const char *);
 } AppState;
 
-#endif // __DATA_H_
+#endif // DATA_H
